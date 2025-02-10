@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Versión del modelo POM -->
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <!-- Definición del proyecto padre -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.2</version> <!-- Versión del padre -->
+        <relativePath/> <!-- Busca el padre en el repositorio -->
+    </parent>
+    
+    <groupId>com.task</groupId> <!-- Identificador único del grupo -->
+    <artifactId>tareas</artifactId> <!-- Identificador único del artefacto -->
+    <version>0.0.1-SNAPSHOT</version> <!-- Versión del proyecto -->
+    <name>tareas</name> <!-- Nombre del proyecto -->
+    <description>Task project for Spring Boot</description> <!-- Descripción del proyecto -->
+    <url/> <!-- URL del proyecto (opcional) -->
+    
+    <licenses>
+        <license/> <!-- Información sobre licencias (opcional) -->
+    </licenses>
+    
+    <developers>
+        <developer/> <!-- Información sobre desarrolladores (opcional) -->
+    </developers>
+    
+    <scm>
+        <connection/> <!-- Conexión al sistema de control de versiones (opcional) -->
+        <developerConnection/> <!-- Conexión para desarrolladores (opcional) -->
+        <tag/> <!-- Etiqueta de versión (opcional) -->
+        <url/> <!-- URL del SCM (opcional) -->
+    </scm>
+    
+    <properties>
+        <java.version>17</java.version> <!-- Versión de Java utilizada -->
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId> <!-- Starter para JPA -->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId> <!-- Starter para aplicaciones web -->
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId> <!-- Herramientas de desarrollo -->
+            <scope>runtime</scope> <!-- Alcance en tiempo de ejecución -->
+            <optional>true</optional> <!-- Dependencia opcional -->
+        </dependency>
+        
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId> <!-- Base de datos en memoria H2 -->
+            <scope>runtime</scope> <!-- Alcance en tiempo de ejecución -->
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId> <!-- Starter para pruebas -->
+            <scope>test</scope> <!-- Alcance de prueba -->
+        </dependency>
+
+		<dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.5</version> <!-- Asegúrate de usar la versión más reciente -->
+    </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId> <!-- Plugin de Maven para Spring Boot -->
+            </plugin>
+        </plugins>
+    </build>
+</project>

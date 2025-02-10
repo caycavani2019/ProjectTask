@@ -1,0 +1,14 @@
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\controller\TaskController.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\controller\UserController.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\data\TaskData.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\exception\GlobalExceptionHandler.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\exception\TaskNotFoundException.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\model\Role.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\model\Task.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\model\TaskStatus.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\model\Users.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\repository\TaskRepository.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\repository\UserRepository.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\service\TaskService.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\service\UserService.java
+C:\Sources\Project Task\tareas\src\main\java\com\task\tareas\TareasApplication.java

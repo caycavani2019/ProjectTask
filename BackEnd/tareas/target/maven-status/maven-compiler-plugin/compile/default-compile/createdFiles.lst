@@ -1,0 +1,8 @@
+com\task\tareas\model\Role.class
+com\task\tareas\exception\TaskNotFoundException.class
+com\task\tareas\repository\UserRepository.class
+com\task\tareas\TareasApplication.class
+com\task\tareas\service\UserService.class
+com\task\tareas\exception\GlobalExceptionHandler.class
+com\task\tareas\controller\UserController.class
+com\task\tareas\model\TaskStatus.class
