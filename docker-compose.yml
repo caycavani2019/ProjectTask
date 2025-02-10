@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/myapp
+      - SPRING_DATASOURCE_USERNAME=myapp
+      - SPRING_DATASOURCE_PASSWORD=myapp
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./FrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    environment:
+      - API_URL=http://backend:8081/api
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=postgresql://db:5432/TaskDB
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Niva2033$#
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
